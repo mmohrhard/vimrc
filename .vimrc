@@ -89,9 +89,6 @@ set nobackup
 " ignore generated files
 set wildignore=*.o,*~,*.pyc
 
-" store undo to file
-set undofile
-
 " don't use compatible mode
 set nocompatible
 
