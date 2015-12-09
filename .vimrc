@@ -213,6 +213,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " YcmConfigs
 let g:ycm_confirm_extra_conf = 0
+let g:ycm_autoclose_preview_window_after_completion=1
 
 " editing of zip files
 au BufReadCmd *.odt,*.ott,*.ods,*.ots,*.odp,*.otp,*.odg,*.otg,*.odb,*.odf,*.odm,*.odc call zip#Browse(expand("<amatch>"))
