@@ -80,6 +80,7 @@ set copyindent
 " cindent settings
 set cindent
 set cino=b1,g0,N-s,t0
+set cinkeys=0{,0},0),:,0#,!^F,o,O,e,0=break
 
 " I don't need backup files
 set noswapfile
@@ -199,9 +200,11 @@ vmap <silent> <leader>x :FormatXML<CR>
 
 " fugitive short cuts
 nmap <leader>ga :Gwrite<CR>
-nmap <leader>gc :Gcommit<CR>
+nmap <silent> <leader>gc :Gcommit<CR>
 nmap <leader>gb :Gblame<CR>
 nmap <leader>gl :Glog<CR>
+
+nmap <leader>ty :YcmCompleter GetType<CR>
 
 " UltiSnips remappings
 let g:UltiSnipsExpandTrigger="<c-j>"
