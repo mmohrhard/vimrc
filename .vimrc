@@ -205,6 +205,10 @@ nmap <leader>gb :Gblame<CR>
 nmap <leader>gl :Glog<CR>
 
 nmap <leader>ty :YcmCompleter GetType<CR>
+nmap <leader>gi :YcmCompleter GoToInclude<CR>
+nmap <leader>td :YcmCompleter GoToDefinition<CR>
+nmap <leader>gd :YcmCompleter GoToDeclaration<CR>
+nmap <leader>to :YcmCompleter GoTo<CR>
 
 " UltiSnips remappings
 let g:UltiSnipsExpandTrigger="<c-j>"
