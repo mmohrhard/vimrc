@@ -227,6 +227,8 @@ au BufReadCmd *.bau call zip#Browse(expand("<amatch>"))
 au BufReadCmd *.oxt call zip#Browse(expand("<amatch>"))
 au BufReadCmd *.docx,*.dotx,*.dotm,*.docm,*.xlsx,*.xltx,*.xlsm,*.xsltm,*.pptx,*.potx,*.ppsx,*.pptm,*.ppsm,*.potm call zip#Browse(expand("<amatch>"))
 
+au FileType gitcommit set tw=72
+
 " some stored macros
 let @q = 'bi/*ea*/'
 
