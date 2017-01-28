@@ -137,6 +137,10 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 nnoremap <silent> <F7> :TlistOpen<CR>
 "set Tlist_Process_File_Always=1
 
+
+" json pretty printing
+map <leader>j :%!python -m json.tool<CR>
+
 " OmniCppComplete
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+ias --languages=c++ --exclude=instdir/* --exclude=workdir/* --exclude=solver/* --extra=+q .<CR>
 
