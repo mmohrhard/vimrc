@@ -129,6 +129,20 @@ vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
+-- remove trailing whitespaces
+vim.keymap.set('n', '<Leader>W', [[:%s/\s\+$//<cr>:let @/=''<cr>]])
+-- quick access to vimrc
+vim.keymap.set('n', '<Leader>ev', '<C-w><C-v><C-l>:e $MYVIMRC<cr>')
+-- vertical split + move to it
+vim.keymap.set('n', '<Leader>w', '<C-w>v<C-w>l')
+-- open a new tab with the current buffer's path
+-- super useful when editing files in the same directory
+vim.keymap.set('n', '<Leader>te', ':tabedit <C-r>=expand("%:p:h")<cr>/')
+-- create new lines in normal mode
+vim.keymap.set('n', '<Leader>o', 'o<ESC>')
+vim.keymap.set('n', '<Leader>O', 'O<ESC>')
+-- json pretty printing
+vim.keymap.set('n', '<Leader>j', ':%!python -m json.tool<cr>')
 
 -- Use LspAttach autocommand to only map the following keys
 -- after the language server attaches to the current buffer
